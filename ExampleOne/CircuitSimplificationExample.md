@@ -2,9 +2,9 @@
 
 ## Step1:Write a Boolean expression for the circuit
 
-![JPG](CircuitsSimplification.jpg)
-
 The circuit is shown below.
+
+![JPG](CircuitsSimplification.jpg)
 
 = AB + BC (B + C)
 
