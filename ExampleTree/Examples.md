@@ -1,9 +1,7 @@
 
 # Question 1: Determine the expression for the following kmaps
 
-
-
-## a)
+## a
 
 |     | C'| C |
 |-----|---|---|
@@ -17,4 +15,3 @@ C doesn't change, so it is 1. A and B are the same, so it is 0. The expression i
 This is because the output is 1 when C is 1, regardless of the value of A and B.
 
 Answer = C
-
