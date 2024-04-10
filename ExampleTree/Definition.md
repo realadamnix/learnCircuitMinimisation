@@ -8,17 +8,19 @@ Kmaping is a technique used to simplify boolean expressions. It is also known as
 
 For example, consider the boolean expression A'B + AB' + AB. The Kmap for this expression is as follows:
 
-|     | B' | B |
-|-----|---|---|
-| A' | 0 | 1 |
-| A  | 1 | 0 |
+  \[ \bar{a} \overline{a} \]
+  \[ \bar{abc} \overline{abc} \]
+
+|           | $\bar{B}$ | $B$ |
+|-----------|-----------|-----|
+| $\bar{A}$ | 0         | 1   |
+| $A$       | 1         | 0   |
 
 The Kmap for this expression is as follows:
 
-|     | B' | B |
-
+|    | B' | B |
+-----|---|---|
 | A' | 0 | 1 |
-
 | A  | 1 | 0 |
 
 The simplified expression is A XOR B.
