@@ -5,7 +5,7 @@
 
 The circuit is shown below.
 
-![Circuits Simplification](CircuitsSimplification.jpg)
+![Circuits Simplification](image/circuit-simplification-example/circuits-simplification.jpg)
 We have three inputs A, B, and C.
 
 We will deal with the diagram in 3 steps.  Step 1, the first 3 gates taking inputs from A, B, C
@@ -17,8 +17,8 @@ The result of the first 3 gates are
 
 Step 2, calculate the next gate `P`, which takes inputs from `N` and `O`.
 
-`P` = `N` * `O`
-`P` = (B+C) * BC
+`P` = `N` \* `O`
+`P` = (B+C) \* BC
 
 Step 3, calculate the final gate `Q`, which takes inputs from `M` and `P`.
 
