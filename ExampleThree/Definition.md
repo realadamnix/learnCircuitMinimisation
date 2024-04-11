@@ -33,6 +33,20 @@ $\overline{\bar{A} \cdot \bar{B}}  = \bar{\bar{A}} + \bar{\bar{B}} = A + B$
 
 The simplified expression is A XOR B.
 
+## Example 3
+
+| A | B | C | Output |
+|---|---|---|--------|
+| 0 | 0 | 0 | 1      |
+| 0 | 0 | 1 | 1      |
+| 0 | 1 | 0 | 0      |
+| 0 | 1 | 1 | 1      |
+| 1 | 0 | 0 | 0      |
+| 1 | 0 | 1 | 1      |
+| 1 | 1 | 0 | 0      |
+| 1 | 1 | 1 | 0      |
+
+
 ## Explanation
 
 The Kmap is a graphical representation of a truth table. It is used to simplify boolean expressions. The Kmap is a two-dimensional grid with rows and columns representing the input variables. The cells in the grid represent the output of the boolean expression for each combination of input variables. The Kmap is used to identify patterns in the output values and simplify the boolean expression. The Kmap is a useful tool for simplifying complex boolean expressions and reducing the number of gates in a circuit.
