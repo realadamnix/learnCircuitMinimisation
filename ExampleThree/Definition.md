@@ -1,15 +1,12 @@
-# What is Kmaping in Kaenaugh Map?
+# What is Kmaping in kavanagh  Map?
 
 ## Definition
 
-Kmaping is a technique used to simplify boolean expressions. It is also known as Karnaugh Map. It is a graphical representation of a truth table. It is used to simplify
+K-mapping is a technique used to simplify boolean expressions. It is also known as Kavanagh Map. It is a graphical representation of a truth table. It is used to simplify
 
 ## Example
 
-For example, consider the boolean expression A'B + AB' + AB. The Kmap for this expression is as follows:
-
-  \[ \bar{a} \overline{a} \]
-  \[ \bar{abc} \overline{abc} \]
+For example, consider the boolean expression A'B + AB' + AB. The Kmap for this expression is as follows: j
 
 |           | $\bar{B}$ | $B$ |
 |-----------|-----------|-----|
