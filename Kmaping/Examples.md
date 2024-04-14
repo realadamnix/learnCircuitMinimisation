@@ -1,5 +1,5 @@
 
-# Question 1: Determine the expression for the following kmaps
+# Question 1: Determine the expression for the following K-Maps
 
 ## a
 
