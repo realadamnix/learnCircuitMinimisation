@@ -1,9 +1,10 @@
-# Question 1: Determine the expression for the following kmaps
+
+# Question 1: Determine the expression for the following K-Maps
 
 ## a
 
 |      | C' | C |
-| ---- | -- | - |
+|------|----|---|
 | A'B' | 0  | 1 |
 | A'B  | 0  | 1 |
 | A B  | 0  | 1 |
@@ -18,7 +19,7 @@ Answer = C
 ## b
 
 |      | C' | C | CD | CD' |
-| ---- | -- | - | -- | --- |
+|------|----|---|----|-----|
 | A'B' | 0  | 0 | 0  | 0   |
 | A'B  | 0  | 0 | 0  | 0   |
 | A B  | 1  | 1 | 1  | 1   |
@@ -30,26 +31,23 @@ Answer = AB
 
 ## c
 
-|      | C' | C | CD | CD' |
-| ---- | -- | - | -- | --- |
-| A'B' | 0  | 0 | 0  | 0   |
-| A'B  | 0  | 1 | 1  | 0   |
-| A B  | 0  | 1 | 1  | 0   |
-| A B' | 0  | 0 | 0  | 0   |
+| AB\CD | $\bar{C}\bar{D}$ | $\bar{C}D$ | $CD$ | $C\bar{D}$ |
+|-------|------|-----|----|-----|
+| A'B'  | 0    | 0   | 0  | 0   |
+| A'B   | 0    | 1   | 1  | 0   |
+| A B   | 0    | 1   | 1  | 0   |
+| A B'  | 0    | 0   | 0  | 0   |
 
-C is 1, so the output is 1. The expression is C.
+Group the 4 ones,
+
+- The columns $\bar{C}D$ and $CD$.  $D$ is common to both columns, so $D$
+- The rows $\bar{A}B$ and $AB$.  $B$ is common to both rows, so $B$
+
+$F = B \cdot D$
 
 This is because the output is 1 when C is 1, regardless of the value of A and B.
 
 its not B because B is 0 in the first row and the output is 0.
-
-
-
-
-
-
-
-
 
 Answer = C
 
@@ -62,3 +60,4 @@ Answer = C
 | A B  | 0  | 1 | 0  | 0   |
 | A B' | 0  | 0 | 0  | 0   |
 
+Answer = C
