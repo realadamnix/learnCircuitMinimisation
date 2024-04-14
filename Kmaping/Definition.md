@@ -75,7 +75,7 @@ Complete the following Karnaugh  map, according to the values found in the above
 | 10   |   | 1 |
 
 The K-Map is as follows:
-$AB+ \bar{B}C + \bar{A}C$
+$\overline{AB}+ \bar{B}C + \bar{A}C$
 
 
 ## Explanation
