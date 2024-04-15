@@ -48,22 +48,6 @@ Here is a truth table for a specific three-input logic circuit:
 | 1 | 1 | 0 |   0    |
 | 1 | 1 | 1 |   0    |
 
-$
-\begin{array}{|c|c|c|c|}
-\hline
-A & B & C & \text{Output} \\
-\hline
-0 & 0 & 0 & 1 \\
-0 & 0 & 1 & 1 \\
-0 & 1 & 0 & 0 \\
-0 & 1 & 1 & 1 \\
-1 & 0 & 0 & 0 \\
-1 & 0 & 1 & 1 \\
-1 & 1 & 0 & 0 \\
-1 & 1 & 1 & 0 \\
-\hline
-\end{array}
-$
 
 Complete the following Karnaugh  map, according to the values found in the above truth table:
 
