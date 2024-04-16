@@ -65,31 +65,30 @@ this is because A covers every 1 on the table.
 | $A$ $B$               | 0                | 0          | 0    | 0          |
 | $A$ $\bar {B}$        | 1                | 0          | 0    | 1          |
 
-
-Answer = $\bar{B} \cdot \bar{D}$
+Answer = $\bar{B} + \bar{D}$
 
 This is because $\bar{B} \cdot \bar{D}$ covers every 1 on the table.
 
 ## Question 2: Determine the expression for the following K-Maps
 
-| A | B | C | D | Z |
-| - | - | - | - | - |
-| 0 | 0 | 0 | 0 | 1 |
-| 0 | 0 | 0 | 1 | 0 |
-| 0 | 0 | 1 | 0 | 1 |
-| 0 | 0 | 1 | 1 | 0 |
-| 0 | 1 | 0 | 0 | 1 |
-| 0 | 1 | 0 | 1 | 0 |
-| 0 | 1 | 1 | 0 | 1 |
-| 0 | 1 | 1 | 1 | 0 |
-| 1 | 0 | 0 | 0 | 1 |
-| 1 | 0 | 0 | 1 | 0 |
-| 1 | 0 | 1 | 0 | 1 |
-| 1 | 0 | 1 | 1 | 0 |
-| 1 | 1 | 0 | 0 | 1 |
-| 1 | 1 | 0 | 1 | 0 |
-| 1 | 1 | 1 | 0 | 1 |
-| 1 | 1 | 1 | 1 | 0 |
+| A | B | C | D | Z |      |
+|---|---|---|---|---|------|
+| 0 | 0 | 0 | 0 | 1 | **** |
+| 0 | 0 | 0 | 1 | 0 |      |
+| 0 | 0 | 1 | 0 | 1 |      |
+| 0 | 0 | 1 | 1 | 0 |      |
+| 0 | 1 | 0 | 0 | 1 |      |
+| 0 | 1 | 0 | 1 | 0 |      |
+| 0 | 1 | 1 | 0 | 1 |      |
+| 0 | 1 | 1 | 1 | 0 |      |
+| 1 | 0 | 0 | 0 | 1 |      |
+| 1 | 0 | 0 | 1 | 0 |      |
+| 1 | 0 | 1 | 0 | 1 |      |
+| 1 | 0 | 1 | 1 | 0 |      |
+| 1 | 1 | 0 | 0 | 1 |      |
+| 1 | 1 | 0 | 1 | 0 |      |
+| 1 | 1 | 1 | 0 | 1 |      |
+| 1 | 1 | 1 | 1 | 0 |      |
 
 awsner = $\bar{A} \cdot \bar{C} \cdot \bar{D} + \bar{A} \cdot C \cdot \bar{D} + A \cdot \bar{C} \cdot \bar{D} + A \cdot C \cdot \bar{D} + A \cdot C \cdot D$
 

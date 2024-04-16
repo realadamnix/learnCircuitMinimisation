@@ -37,4 +37,8 @@ Design a combination logic circuit that will allow access by producing a logic 1
 
 ## Step 2: Boolean expression to represent each outputted logic 1
 
-O .O + O \cdot S + O \cdot C + O \cdot S \cdot C + M + M \cdot O + M \cdot S + M \cdot C + M \cdot S \cdot C
+    M +
+
+## Step 3: Simplify the Boolean expression
+
+O + O $\cdot$ S + O $\cdot$ C + O $\cdot$ S $\cdot$ C + M + M $\cdot$ O + M $\cdot$ S + M $\cdot$ C + M $\cdot$ S $\cdot$ C 

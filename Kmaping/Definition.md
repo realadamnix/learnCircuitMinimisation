@@ -69,7 +69,7 @@ The K-Map is a graphical representation of a truth table. It is used to simplify
 ### Example 1
 
 | A | B | C | F |
-| - | - | - | :-: |
+|---|---|---|:-:|
 | 0 | 0 | 0 | 0 |
 | 0 | 0 | 1 | 0 |
 | 0 | 1 | 0 | 1 |
