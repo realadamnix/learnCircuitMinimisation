@@ -71,33 +71,32 @@ This is because $\bar{B} \cdot \bar{D}$ covers every 1 on the table.
 
 ## Question 2: Determine the expression for the following K-Maps
 
-| A | B | C | D | Z |      |
-|---|---|---|---|---|------|
-| 0 | 0 | 0 | 0 | 1 | **** |
-| 0 | 0 | 0 | 1 | 0 |      |
-| 0 | 0 | 1 | 0 | 1 |      |
-| 0 | 0 | 1 | 1 | 0 |      |
-| 0 | 1 | 0 | 0 | 1 |      |
-| 0 | 1 | 0 | 1 | 0 |      |
-| 0 | 1 | 1 | 0 | 1 |      |
-| 0 | 1 | 1 | 1 | 0 |      |
-| 1 | 0 | 0 | 0 | 1 |      |
-| 1 | 0 | 0 | 1 | 0 |      |
-| 1 | 0 | 1 | 0 | 1 |      |
-| 1 | 0 | 1 | 1 | 0 |      |
-| 1 | 1 | 0 | 0 | 1 |      |
-| 1 | 1 | 0 | 1 | 0 |      |
-| 1 | 1 | 1 | 0 | 1 |      |
-| 1 | 1 | 1 | 1 | 0 |      |
+| A | B | C | D | Output |
+|---|---|---|---|-------:|
+| 0 | 0 | 0 | 0 |      1 |
+| 0 | 0 | 0 | 1 |      0 |
+| 0 | 0 | 1 | 0 |      1 |
+| 0 | 0 | 1 | 1 |      0 |
+| 0 | 1 | 0 | 0 |      1 |
+| 0 | 1 | 0 | 1 |      0 |
+| 0 | 1 | 1 | 0 |      1 |
+| 0 | 1 | 1 | 1 |      0 |
+| 1 | 0 | 0 | 0 |      1 |
+| 1 | 0 | 0 | 1 |      0 |
+| 1 | 0 | 1 | 0 |      1 |
+| 1 | 0 | 1 | 1 |      0 |
+| 1 | 1 | 0 | 0 |      1 |
+| 1 | 1 | 0 | 1 |      0 |
+| 1 | 1 | 1 | 0 |      1 |
+| 1 | 1 | 1 | 1 |      0 |
 
-| CD\AB | 00 | 01 | 11 | 10 |
-|-------|----|----|----|----|
-| 00    | 1  | 0  | 1  | 0  |
-| 01    | 0  | 0  | 0  | 0  |
-| 11    | 0  | 0  | 0  | 0  |
-| 10    | 1  | 0  | 1  | 0  |
+| AB\CD                 | $\bar{C}\bar{D}$ | $\bar{C}D$ | $CD$ | $C\bar{D}$ |
+|-----------------------|:----------------:|------------|------|:----------:|
+| $\bar {A}$ $\bar{B} $ |        1         |            |      |     1      |
+| $\bar {A}$ $B$        |        1         |            |      |     1      |
+| $A$ $B$               |        1         |            |      |     1      |
+| $A$ $\bar {B}$        |        1         |            |      |     1      |
 
-
-awsner = $\bar{A} \cdot \bar{C} \cdot \bar{D} + \bar{A} \cdot C \cdot \bar{D} + A \cdot \bar{C} \cdot \bar{D} + A \cdot C \cdot \bar{D} + A \cdot C \cdot D$
+Answer = $\bar{A} \cdot \bar{C} \cdot \bar{D} + \bar{A} \cdot C \cdot \bar{D} + A \cdot \bar{C} \cdot \bar{D} + A \cdot C \cdot \bar{D} + A \cdot C \cdot D$
 
 This is because the output is 1 when D is 0, regardless of the value of A and C.
