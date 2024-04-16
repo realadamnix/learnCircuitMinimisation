@@ -90,13 +90,12 @@ This is because $\bar{B} \cdot \bar{D}$ covers every 1 on the table.
 | 1 | 1 | 1 | 0 |      1 |
 | 1 | 1 | 1 | 1 |      0 |
 
-
 | AB\CD                 | $\bar{C}\bar{D}$ | $\bar{C}D$ | $CD$ | $C\bar{D}$ |
-|-----------------------|------------------|------------|------|------------|
-| $\bar {A}$ $\bar{B} $ | 1                |            |      | 1          |
-| $\bar {A}$ $B$        | 1                |            |      | 1          |
-| $A$ $B$               | 1                 |            |      | 1           |
-| $A$ $\bar {B}$        | 1                |            |      | 1          |
+|-----------------------|:----------------:|------------|------|:----------:|
+| $\bar {A}$ $\bar{B} $ |        1         |            |      |     1      |
+| $\bar {A}$ $B$        |        1         |            |      |     1      |
+| $A$ $B$               |        1         |            |      |     1      |
+| $A$ $\bar {B}$        |        1         |            |      |     1      |
 
 Answer = $\bar{A} \cdot \bar{C} \cdot \bar{D} + \bar{A} \cdot C \cdot \bar{D} + A \cdot \bar{C} \cdot \bar{D} + A \cdot C \cdot \bar{D} + A \cdot C \cdot D$
 
