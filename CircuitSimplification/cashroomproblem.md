@@ -14,16 +14,16 @@ access by producing a logic 1 when the above conditions are met.
 
 ## Step 1: truth table
 
-| A | M | C | X | Boolean  |
-|---|---|---|---|----------|
-| 0 | 0 | 0 | 0 |          |
-| 0 | 0 | 1 | 0 |          |
-| 0 | 1 | 0 | 1 | M        |
-| 0 | 1 | 1 | 0 | M + C    |
-| 1 | 0 | 0 | 1 |          |
-| 1 | 0 | 1 | 0 | A + C    |
-| 1 | 1 | 0 | 0 | A + M    |
-| 1 | 1 | 1 | 1 | A + C + M|
+| A | M | C | X (output) | Boolean   |
+|---|---|---|------------|-----------|
+| 0 | 0 | 0 | 0          |           |
+| 0 | 0 | 1 | 0          |           |
+| 0 | 1 | 0 | 1          | M         |
+| 0 | 1 | 1 | 0          | M + C     |
+| 1 | 0 | 0 | 1          |           |
+| 1 | 0 | 1 | 0          | A + C     |
+| 1 | 1 | 0 | 0          | A + M     |
+| 1 | 1 | 1 | 1          | A + C + M |
 
 ## Step 2: Boolean expression to represent each outputted logic 1
 

@@ -2,12 +2,12 @@
 
 ## a
 
-| AB/C                      | $ \bar{C}$ | $C$ |
-| ------------------------- | ------------ | ----- |
-| $\bar {A}$ $\bar{B} $ | 0            | 1     |
-| $\bar {A}$ $B$        | 0            | 1     |
-| $A$ $B$               | 0            | 1     |
-| $A$ $\bar {B}$        | 0            | 1     |
+| AB/C                  | $ \bar{C}$ | $C$ |
+|-----------------------|------------|-----|
+| $\bar {A}$ $\bar{B} $ | 0          | 1   |
+| $\bar {A}$ $B$        | 0          | 1   |
+| $A$ $B$               | 0          | 1   |
+| $A$ $\bar {B}$        | 0          | 1   |
 
 C doesn't change, so it is 1. A and B are the same, so it is 0. The expression is C.
 
@@ -17,12 +17,12 @@ Answer = C
 
 ## b
 
-| AB/CD                     | $\bar{C}$ $\bar{D}$ | $\bar{C}$ $D$ | $CD$ | $\overline{CD}$ |
-| ------------------------- | ----------------------- | ----------------- | ------ | ----------------- |
-| $\bar {A}$ $\bar{B} $ | 0                       | 0                 | 0      | 0                 |
-| $\bar {A}$ $B$        | 0                       | 0                 | 0      | 0                 |
-| $A$ $B$               | 1                       | 1                 | 1      | 1                 |
-| $A$ $\bar {B}$        | 0                       | 0                 | 0      | 0                 |
+| AB/CD                 | $\bar{C}$ $\bar{D}$ | $\bar{C}$ $D$ | $CD$ | $\overline{CD}$ |
+|-----------------------|---------------------|---------------|------|-----------------|
+| $\bar {A}$ $\bar{B} $ | 0                   | 0             | 0    | 0               |
+| $\bar {A}$ $B$        | 0                   | 0             | 0    | 0               |
+| $A$ $B$               | 1                   | 1             | 1    | 1               |
+| $A$ $\bar {B}$        | 0                   | 0             | 0    | 0               |
 
 AB is 1, so the output is 1. The expression is AB.
 
@@ -30,12 +30,12 @@ Answer = AB
 
 ## c
 
-| AB\CD                     | $\bar{C}\bar{D}$ | $\bar{C}D$ | $CD$ | $\overline{CD}$ |
-| ------------------------- | ------------------ | ------------ | ------ | ----------------- |
-| $\bar {A}$ $\bar{B} $ | 0                  | 0            | 0      | 0                 |
-| $\bar {A}$ $B$        | 0                  | 1            | 1      | 0                 |
-| $A$ $B$               | 0                  | 1            | 1      | 0                 |
-| $A$ $\bar {B}$        | 0                  | 0            | 0      | 0                 |
+| AB\CD                 | $\bar{C}\bar{D}$ | $\bar{C}D$ | $CD$ | $\overline{CD}$ |
+|-----------------------|------------------|------------|------|-----------------|
+| $\bar {A}$ $\bar{B} $ | 0                | 0          | 0    | 0               |
+| $\bar {A}$ $B$        | 0                | 1          | 1    | 0               |
+| $A$ $B$               | 0                | 1          | 1    | 0               |
+| $A$ $\bar {B}$        | 0                | 0          | 0    | 0               |
 
 Group the 4 ones,
 
@@ -45,12 +45,12 @@ answer = C
 
 ## d
 
-| AB\CD                     | $\bar{C}\bar{D}$ | $\bar{C}D$ | $CD$ | $C\bar{D}$ |
-| ------------------------- | ------------------ | ------------ | ------ | ------------ |
-| $\bar {A}$ $\bar{B} $ | 0                  | 0            | 0      | 0            |
-| $\bar {A}$ $B$        | 0                  | 0            | 0      | 0            |
-| $A$ $B$               | 1                  | 0            | 0      | 1            |
-| $A$ $\bar {B}$        | 1                  | 0            | 0      | 1            |
+| AB\CD                 | $\bar{C}\bar{D}$ | $\bar{C}D$ | $CD$ | $C\bar{D}$ |
+|-----------------------|------------------|------------|------|------------|
+| $\bar {A}$ $\bar{B} $ | 0                | 0          | 0    | 0          |
+| $\bar {A}$ $B$        | 0                | 0          | 0    | 0          |
+| $A$ $B$               | 1                | 0          | 0    | 1          |
+| $A$ $\bar {B}$        | 1                | 0          | 0    | 1          |
 
 Answer = A
 
@@ -58,12 +58,12 @@ this is because A covers every 1 on the table.
 
 ## e
 
-| AB\CD                     | $\bar{C}\bar{D}$ | $\bar{C}D$ | $CD$ | $C\bar{D}$ |
-| ------------------------- | ------------------ | ------------ | ------ | ------------ |
-| $\bar {A}$ $\bar{B} $ | 1                  | 0            | 0      | 1            |
-| $\bar {A}$ $B$        | 0                  | 0            | 0      | 0            |
-| $A$ $B$               | 0                  | 0            | 0      | 0            |
-| $A$ $\bar {B}$        | 1                  | 0            | 0      | 1            |
+| AB\CD                 | $\bar{C}\bar{D}$ | $\bar{C}D$ | $CD$ | $C\bar{D}$ |
+|-----------------------|------------------|------------|------|------------|
+| $\bar {A}$ $\bar{B} $ | 1                | 0          | 0    | 1          |
+| $\bar {A}$ $B$        | 0                | 0          | 0    | 0          |
+| $A$ $B$               | 0                | 0          | 0    | 0          |
+| $A$ $\bar {B}$        | 1                | 0          | 0    | 1          |
 
 
 Answer = $\bar{B} \cdot \bar{D}$
@@ -91,12 +91,6 @@ This is because $\bar{B} \cdot \bar{D}$ covers every 1 on the table.
 | 1 | 1 | 1 | 0 | 1 |
 | 1 | 1 | 1 | 1 | 0 |
 
-Group the 1s
+awsner = $\bar{A} \cdot \bar{C} \cdot \bar{D} + \bar{A} \cdot C \cdot \bar{D} + A \cdot \bar{C} \cdot \bar{D} + A \cdot C \cdot \bar{D} + A \cdot C \cdot D$
 
-- The columns $C$ and $\bar{C}$.  $C$ is common to both columns, so $C$
-
-$F = C$
-
-This is because the output is 1 when C is 1, regardless of the value of A and B.
-
-Answer = C
+This is because the output is 1 when D is 0, regardless of the value of A and C.
