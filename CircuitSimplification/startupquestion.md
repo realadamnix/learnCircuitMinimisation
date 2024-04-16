@@ -13,15 +13,15 @@ Design a combination logic circuit that will allow access to the server room by 
 ## Step 1: Truth Table
 
 | $A$ | $M$ | $E$ | $X$ (output) | Boolean   |
-|-----|-----|-----|--------------|-----------|
-| 1   | 1   | 1   | 1            | A + M + E |
-| 1   | 1   | 0   | 0            | A + M     |
-| 1   | 0   | 1   | 0            | A + E     |
-| 1   | 0   | 0   | 0            | A         |
-| 0   | 1   | 1   | 0            | M + E     |
-| 0   | 1   | 0   | 0            | M         |
-| 0   | 0   | 1   | 0            | E         |
-| 0   | 0   | 0   | 0            |           |
+| ----- | ----- | ----- | -------------- | --------- |
+| 1     | 1     | 1     | 1              | A + M + E |
+| 1     | 1     | 0     | 0              | A + M     |
+| 1     | 0     | 1     | 0              | A + E     |
+| 1     | 0     | 0     | 0              | A         |
+| 0     | 1     | 1     | 0              | M + E     |
+| 0     | 1     | 0     | 0              | M         |
+| 0     | 0     | 1     | 0              | E         |
+| 0     | 0     | 0     | 0              |           |
 
 ## Step 2: Boolean expression to represent each outputted logic 1
 
@@ -29,4 +29,8 @@ $A + M + E \cdot A + M \cdot A + E \cdot A \cdot M + E \cdot M \cdot E \cdot E$
 
 ## Step 3: Simplify the Boolean expression
 
-$ A + M + E \cdot A \cdot M \cdot E $
+$A + M + E \cdot A + M \cdot A + E \cdot A \cdot M + E \cdot M \cdot E \cdot E$
+
+$A + M \cdot A + E \cdot A + E \cdot A \cdot M + E \cdot M \cdot E \cdot E$
+
+$A  \cdot (M + E)$

@@ -41,4 +41,3 @@ $X = M + A \cdot C + A \cdot C \cdot M$
 $X = M + A \cdot C \cdot M + A \cdot C$
 
 $X = M + A \cdot C$
-
