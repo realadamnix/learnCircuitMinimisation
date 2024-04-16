@@ -10,26 +10,26 @@ The K-Map is a two-dimensional grid with rows and columns representing the input
 
 For example, consider the boolean expression $\bar{A}B + A\bar{B} + AB$. The K-Map for this expression is as follows:
 
-| A | B | Q | name |
-|---|---|---|------|
-| 0 | 0 | 0 | *w*  |
-| 0 | 1 | 1 | *x*  |
-| 1 | 0 | 1 | *y*  |
-| 1 | 1 | 1 | *z*  |
+| A | B | Q | name  |
+| - | - | - | ----- |
+| 0 | 0 | 0 | *w* |
+| 0 | 1 | 1 | *x* |
+| 1 | 0 | 1 | *y* |
+| 1 | 1 | 1 | *z* |
 
-|           | $\bar{B}$ | $B$ |
-|-----------|-----------|-----|
+|             | $\bar{B}$ | $B$ |
+| ----------- | ----------- | ----- |
 | $\bar{A}$ | *w*       | *x* |
 | $A$       | *y*       | *z* |
 
-|           | $\bar{B}$ | $B$ |
-|-----------|-----------|-----|
-| $\bar{A}$ |           | 1   |
-| $A$       | 1         | 1   |
+|             | $\bar{B}$ | $B$ |
+| ----------- | ----------- | ----- |
+| $\bar{A}$ |             | 1     |
+| $A$       | 1           | 1     |
 
 $A + B$
 
-$\overline{\bar{A} \cdot \bar{B}}  = \bar{\bar{A}} + \bar{\bar{B}} = A + B$
+${\bar{A} \cdot \bar{B}}  = {\bar{A}} + {\bar{B}} = A + B$
 
 The simplified expression is A XOR B.
 
@@ -38,21 +38,20 @@ The simplified expression is A XOR B.
 Here is a truth table for a specific three-input logic circuit:
 
 | A | B | C | Output |
-|---|---|---|:------:|
-| 0 | 0 | 0 |   1    |
-| 0 | 0 | 1 |   1    |
-| 0 | 1 | 0 |   0    |
-| 0 | 1 | 1 |   1    |
-| 1 | 0 | 0 |   0    |
-| 1 | 0 | 1 |   1    |
-| 1 | 1 | 0 |   0    |
-| 1 | 1 | 1 |   0    |
-
+| - | - | - | :----: |
+| 0 | 0 | 0 |   1   |
+| 0 | 0 | 1 |   1   |
+| 0 | 1 | 0 |   0   |
+| 0 | 1 | 1 |   1   |
+| 1 | 0 | 0 |   0   |
+| 1 | 0 | 1 |   1   |
+| 1 | 1 | 0 |   0   |
+| 1 | 1 | 1 |   0   |
 
 Complete the following Karnaugh  map, according to the values found in the above truth table:
 
 | AB\C | 0 | 1 |
-|------|---|---|
+| ---- | - | - |
 | 00   | 1 | 1 |
 | 01   |   | 1 |
 | 11   |   |   |
@@ -60,7 +59,6 @@ Complete the following Karnaugh  map, according to the values found in the above
 
 The K-Map is as follows:
 $\overline{AB}+ \bar{B}C + \bar{A}C$
-
 
 ## Explanation
 
@@ -71,7 +69,7 @@ The K-Map is a graphical representation of a truth table. It is used to simplify
 ### Example 1
 
 | A | B | C | F |
-|---|---|---|:-:|
+| - | - | - | :-: |
 | 0 | 0 | 0 | 0 |
 | 0 | 0 | 1 | 0 |
 | 0 | 1 | 0 | 1 |
@@ -84,7 +82,7 @@ The K-Map is a graphical representation of a truth table. It is used to simplify
 KMap:
 
 | C\AB | 00 | 01 | 11 | 10 |
-|------|----|----|----|----|
+| ---- | -- | -- | -- | -- |
 | 0    | 0  | 1  | 1  | 1  |
 | 1    | 0  | 0  | 0  | 1  |
 
@@ -106,7 +104,7 @@ $F = A\bar{B} + B\bar{C}$
 | 1 | 1 | 1 | 0 |
 
 | BC\A | 0 | 1 |
-|------|---|---|
+| ---- | - | - |
 | 00   |   | 1 |
 | 01   | 1 | 1 |
 | 11   | 1 |   |
@@ -116,22 +114,22 @@ $F= A\bar{B} + \bar{A}C + A\bar{C} $
 
 ### Example 3
 
-|CD\AB | 00 | 01 | 11 | 10 |
-|------|----|----|----|----|
-| 00   | 0  | 0  | 1  | 0  |
-| 01   | 0  | 0  | 1  | 1  |
-| 11   | 0  | 0  | 0  | 1  |
-| 10   | 1  | 1  | 0  | 0  |
+| CD\AB | 00 | 01 | 11 | 10 |
+| ----- | -- | -- | -- | -- |
+| 00    | 0  | 0  | 1  | 0  |
+| 01    | 0  | 0  | 1  | 1  |
+| 11    | 0  | 0  | 0  | 1  |
+| 10    | 1  | 1  | 0  | 0  |
 
 $F = \bar{A}C\bar{D} + AB\bar{C} + A\bar{B}D$
 
 ## Example 4
 
-|CD\AB | 00 | 01 | 11 | 10 |
-|------|----|----|----|----|
-| 00   | 1  | 0  | 0  | 0  |
-| 01   | 1  | 0  | 1  | 1  |
-| 11   | 1  | 0  | 1  | 1  |
-| 10   | 1  | 0  | 0  | 0  |
+| CD\AB | 00 | 01 | 11 | 10 |
+| ----- | -- | -- | -- | -- |
+| 00    | 1  | 0  | 0  | 0  |
+| 01    | 1  | 0  | 1  | 1  |
+| 11    | 1  | 0  | 1  | 1  |
+| 10    | 1  | 0  | 0  | 0  |
 
 $F = \overline{AB} + AD$
