@@ -1,7 +1,6 @@
-
 # Circuit Simplification Example
 
-## Step1:Write a Boolean expression for the circuit
+## Step1: Write a Boolean expression for the circuit
 
 The circuit is shown below.
 
@@ -28,19 +27,19 @@ Step 3, calculate the final gate `Q`, which takes inputs from `M` and `P`.
 The final expression is AB + (B+C) * BC
 
 | A | B | C | M=(AB) | O=(BC) | N=(B+C) | P= (NO) | Q=(M+P) |
-|---|---|---|:------:|:------:|:-------:|:-------:|:-------:|
-| 0 | 0 | 0 |   0    |   0    |    0    |    0    |    0    |
-| 0 | 0 | 1 |   0    |   0    |    1    |    0    |    0    |
-| 0 | 1 | 0 |   0    |   0    |    1    |    0    |    0    |
-| 0 | 1 | 1 |   0    |   1    |    1    |    1    |    1    |
-| 1 | 0 | 0 |   0    |   0    |    0    |    0    |    0    |
-| 1 | 0 | 1 |   0    |   0    |    1    |    0    |    0    |
-| 1 | 1 | 0 |   1    |   0    |    1    |    0    |    1    |
-| 1 | 1 | 1 |   1    |   1    |    1    |    1    |    1    |
+| - | - | - | :----: | :----: | :-----: | :-----: | :-----: |
+| 0 | 0 | 0 |   0   |   0   |    0    |    0    |    0    |
+| 0 | 0 | 1 |   0   |   0   |    1    |    0    |    0    |
+| 0 | 1 | 0 |   0   |   0   |    1    |    0    |    0    |
+| 0 | 1 | 1 |   0   |   1   |    1    |    1    |    1    |
+| 1 | 0 | 0 |   0   |   0   |    0    |    0    |    0    |
+| 1 | 0 | 1 |   0   |   0   |    1    |    0    |    0    |
+| 1 | 1 | 0 |   1   |   0   |    1    |    0    |    1    |
+| 1 | 1 | 1 |   1   |   1   |    1    |    1    |    1    |
 
-## Step2:Use Boolean simplification to reduce this expression
+## Step2: Use Boolean simplification to reduce this expression
 
-Q = AB + (B+C) * BC
+$Q = AB + (B+C) \cdot BC$
 
 = AB + BC (B + C)
 
@@ -53,4 +52,4 @@ Q = AB + (B+C) * BC
 = B(A + C)
 
 Draw circuits using:
-<https://digitaljs.tilk.eu/>
+[https://digitaljs.tilk.eu/](https://digitaljs.tilk.eu/)
