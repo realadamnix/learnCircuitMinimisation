@@ -112,7 +112,7 @@ $F = A\bar{B} + B\bar{C}$
 
 $F= A\bar{B} + \bar{A}C + A\bar{C} $
 
-### Example 3
+### Example 3.1
 
 | CD\AB | 00 | 01 | 11 | 10 |
 | ----- | -- | -- | -- | -- |

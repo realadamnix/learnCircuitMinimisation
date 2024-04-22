@@ -2,12 +2,12 @@
 
 ## a
 
-| AB/C                  | $ \bar{C}$ | $C$ |
-|-----------------------|------------|-----|
-| $\bar {A}$ $\bar{B} $ | 0          | 1   |
-| $\bar {A}$ $B$        | 0          | 1   |
-| $A$ $B$               | 0          | 1   |
-| $A$ $\bar {B}$        | 0          | 1   |
+| AB/C                 | $ \bar{C}$ | $C$ |
+|----------------------|------------|-----|
+| $\bar {A}$ $\bar{B}$ | 0          | 1   |
+| $\bar {A}$ $B$       | 0          | 1   |
+| $A$ $B$              | 0          | 1   |
+| $A$ $\bar {B}$       | 0          | 1   |
 
 C doesn't change, so it is 1. A and B are the same, so it is 0. The expression is C.
 
