@@ -2,12 +2,12 @@
 
 ## a
 
-| AB/C                     | $ \bar{C}$ | $C$ |
-| ------------------------ | ------------ | ----- |
-| $\bar {A}$ $\bar{B}$ | 0            | 1     |
-| $\bar {A}$ $B$       | 0            | 1     |
-| $A$ $B$              | 0            | 1     |
-| $A$ $\bar {B}$       | 0            | 1     |
+| AB/C                 | $ \bar{C}$ | $C$ |
+|----------------------|------------|-----|
+| $\bar {A}$ $\bar{B}$ | 0          | 1   |
+| $\bar {A}$ $B$       | 0          | 1   |
+| $A$ $B$              | 0          | 1   |
+| $A$ $\bar {B}$       | 0          | 1   |
 
 C doesn't change, so it is 1. A and B are the same, so it is 0. The expression is C.
 
@@ -17,12 +17,12 @@ Answer = C
 
 ## b
 
-| AB/CD                     | $\bar{C}$ $\bar{D}$ | $\bar{C}$ $D$ | $CD$ | $\overline{CD}$ |
-| ------------------------- | ----------------------- | ----------------- | ------ | ----------------- |
-| $\bar {A}$ $\bar{B} $ | 0                       | 0                 | 0      | 0                 |
-| $\bar {A}$ $B$        | 0                       | 0                 | 0      | 0                 |
-| $A$ $B$               | 1                       | 1                 | 1      | 1                 |
-| $A$ $\bar {B}$        | 0                       | 0                 | 0      | 0                 |
+| AB/CD                 | $\bar{C}$ $\bar{D}$ | $\bar{C}$ $D$ | $CD$ | $\overline{CD}$ |
+|-----------------------|---------------------|---------------|------|-----------------|
+| $\bar {A}$ $\bar{B} $ | 0                   | 0             | 0    | 0               |
+| $\bar {A}$ $B$        | 0                   | 0             | 0    | 0               |
+| $A$ $B$               | 1                   | 1             | 1    | 1               |
+| $A$ $\bar {B}$        | 0                   | 0             | 0    | 0               |
 
 AB is 1, so the output is 1. The expression is AB.
 
@@ -30,49 +30,53 @@ Answer = AB
 
 ## c
 
-| AB\CD                     | $\bar{C}\bar{D}$ | $\bar{C}D$ | $CD$ | $\overline{CD}$ |
-| ------------------------- | ------------------ | ------------ | ------ | ----------------- |
-| $\bar {A}$ $\bar{B} $ | 0                  | 0            | 0      | 0                 |
-| $\bar {A}$ $B$        | 0                  | 1            | 1      | 0                 |
-| $A$ $B$               | 0                  | 1            | 1      | 0                 |
-| $A$ $\bar {B}$        | 0                  | 0            | 0      | 0                 |
+| AB\CD                 | $\bar{C}\bar{D}$ | $\bar{C}D$ | $CD$ | $\overline{CD}$ |
+|-----------------------|------------------|------------|------|-----------------|
+| $\bar {A}$ $\bar{B} $ | 0                | 0          | 0    | 0               |
+| $\bar {A}$ $B$        | 0                | 1          | 1    | 0               |
+| $A$ $B$               | 0                | 1          | 1    | 0               |
+| $A$ $\bar {B}$        | 0                | 0          | 0    | 0               |
 
 Group the 4 ones,
 
-C is the only column that the state doesn't change.
+D doesn't in the columns, so D
+B doesn't in the rows, so B
 
-answer = BD
+Answer = BD
 
 ## d
 
-| AB\CD                     | $\bar{C}\bar{D}$ | $\bar{C}D$ | $CD$ | $C\bar{D}$ |
-| ------------------------- | ------------------ | ------------ | ------ | ------------ |
-| $\bar {A}$ $\bar{B} $ | 0                  | 0            | 0      | 0            |
-| $\bar {A}$ $B$        | 0                  | 0            | 0      | 0            |
-| $A$ $B$               | 1                  | 0            | 0      | 1            |
-| $A$ $\bar {B}$        | 1                  | 0            | 0      | 1            |
+| AB\CD                 | $\bar{C}\bar{D}$ | $\bar{C}D$ | $CD$ | $C\bar{D}$ |
+|-----------------------|------------------|------------|------|------------|
+| $\bar {A}$ $\bar{B} $ | 0                | 0          | 0    | 0          |
+| $\bar {A}$ $B$        | 0                | 0          | 0    | 0          |
+| $A$ $B$               | 1                | 0          | 0    | 1          |
+| $A$ $\bar {B}$        | 1                | 0          | 0    | 1          |
 
 Answer = A
 
-this is because A covers every 1 on the table.
+$\bar{D}$ does not change in the columns, so $\bar{D}$  
+A does not change in the rows, so A
+
+Answer = $A \cdot \bar{D}$
 
 ## e
 
-| AB\CD                     | $\bar{C}\bar{D}$ | $\bar{C}D$ | $CD$ | $C\bar{D}$ |
-| ------------------------- | ------------------ | ------------ | ------ | ------------ |
-| $\bar {A}$ $\bar{B} $ | 1                  | 0            | 0      | 1            |
-| $\bar {A}$ $B$        | 0                  | 0            | 0      | 0            |
-| $A$ $B$               | 0                  | 0            | 0      | 0            |
-| $A$ $\bar {B}$        | 1                  | 0            | 0      | 1            |
+| AB\CD                 | $\bar{C}\bar{D}$ | $\bar{C}D$ | $CD$ | $C\bar{D}$ |
+|-----------------------|------------------|------------|------|------------|
+| $\bar {A}$ $\bar{B} $ | 1                | 0          | 0    | 1          |
+| $\bar {A}$ $B$        | 0                | 0          | 0    | 0          |
+| $A$ $B$               | 0                | 0          | 0    | 0          |
+| $A$ $\bar {B}$        | 1                | 0          | 0    | 1          |
 
-Answer = $\bar{B} + \bar{D}$
+Answer = $\overline{B} \cdot \overline{D}$
 
-This is because $\bar{B} \cdot \bar{D}$ covers every 1 on the table.
+This is because $\overline{B} \cdot \overline{D}$ covers every 1 on the table.
 
 ## Question 2: Determine the expression for the following K-Maps
 
 | A | B | C | D | Output |
-| - | - | - | - | -----: |
+|---|---|---|---|-------:|
 | 0 | 0 | 0 | 0 |      1 |
 | 0 | 0 | 0 | 1 |      0 |
 | 0 | 0 | 1 | 0 |      1 |
@@ -90,12 +94,12 @@ This is because $\bar{B} \cdot \bar{D}$ covers every 1 on the table.
 | 1 | 1 | 1 | 0 |      1 |
 | 1 | 1 | 1 | 1 |      0 |
 
-| AB\CD                     | $\bar{C}\bar{D}$ | $\bar{C}D$ | $CD$ | $C\bar{D}$ |
-| ------------------------- | :----------------: | ------------ | ------ | :----------: |
-| $\bar {A}$ $\bar{B} $ |         1         |              |        |      1      |
-| $\bar {A}$ $B$        |         1         |              |        |      1      |
-| $A$ $B$               |         1         |              |        |      1      |
-| $A$ $\bar {B}$        |         1         |              |        |      1      |
+| AB\CD                 | $\bar{C}\bar{D}$ | $\bar{C}D$ | $CD$ | $C\bar{D}$ |
+|-----------------------|:----------------:|------------|------|:----------:|
+| $\bar {A}$ $\bar{B} $ |        1         |            |      |     1      |
+| $\bar {A}$ $B$        |        1         |            |      |     1      |
+| $A$ $B$               |        1         |            |      |     1      |
+| $A$ $\bar {B}$        |        1         |            |      |     1      |
 
 Answer = $\bar{A} \cdot \bar{C} \cdot \bar{D} + \bar{A} \cdot C \cdot \bar{D} + A \cdot \bar{C} \cdot \bar{D} + A \cdot C \cdot \bar{D} + A \cdot C \cdot D$
 
