@@ -26,6 +26,7 @@ access by producing a logic 1 when the above conditions are met.
 
 ## Step 2: Boolean expression to represent each outputted logic 1
 
+
 $X = M + M \cdot C + A\cdot C + A \cdot M + A \cdot C \cdot M$
 
 ## Step 3: Simplify the Boolean expression
